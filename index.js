@@ -99,6 +99,10 @@ app.get('/', (req, res) => {
     res.send('API is running. Use the /bfhl POST endpoint.');
 });
 
+app.get("/bfhl", (req, res) => {
+  res.send("Welcome to the BFHL API. Please send a POST request.");
+});
+
 
 // Start the server
 app.listen(port, () => {
